@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			weekend html
+		</title>
+		<link rel="icon" type="image/x-icon" href=""/>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				background-color: #000;
+			}
+			.main-wrapper{
+				background-color: #fff;
+				width: 1024px;
+				padding: 17px;
+				margin: 100px auto;
+			}
+			.blue-portion{
+				width: 1024px;
+				background-color: #1b4f8b;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				color: #fff;
+				padding-top: 21px;
+				padding-bottom: 21px;
+				border-radius: 10px;
+			}
+			.blue-section-one{
+				width: 30%;
+				font-size: 14px;
+				font-weight: 600;
+				padding-left: 22px;
+			}
+			.blue-flex{
+				display: flex;
+				justify-content: space-around;
+				border-left: 2px #fff solid;
+				border-right: 2px #fff solid;
+			}
+			.blue-section-two{
+				width: 36%;
+				background-color: #1b4f8b;
+				font-size: 14px;
+				line-height: 21px;
+			}
+			.blue-section-three{
+				width: 33%;
+				text-align: center;
+			}
+			.button-one{
+				width: 160px;
+				background-color: #abfee0;
+				color: #000;
+				padding: 12px 13px;
+				margin: 0px auto;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+			small{	
+				background-color: #fff;
+				padding: 4px 6px;
+				border-radius: 20px;
+				color: blue;
+			}
+			.gray-portion{
+				width: 1024px;
+				background-color: #e5e5e5;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				color: #000;
+				padding-top: 21px;
+				padding-bottom: 21px;
+				border-radius: 10px;
+				margin-top: 17px;
+			}
+			.gray-section-one{
+				width: 30%;
+				font-size: 14px;
+				font-weight: 600;
+				padding-left: 22px;
+			}
+			.gray-flex{
+				display: flex;
+				justify-content: space-around;
+				border-left: 2px #fff solid;
+				border-right: 2px #fff solid;
+			}
+			.gray-section-two{
+				width: 36%;
+				background-color: #e5e5e5;
+				font-size: 14px;
+				line-height: 21px;
+			}
+			.gray-section-three{
+				width: 33%;
+				background-color: #e5e5e5;
+				text-align: center;
+			}
+			.button-two{
+				width: 160px;
+				background-color: #ffc5c7;
+				color: #000;
+				padding: 12px 13px;
+				margin: 0px auto;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+			.button-three{
+				width: 160px;
+				background-color: #ffdebf;
+				color: #000;
+				padding: 12px 13px;
+				margin: 0px auto;
+				border-radius: 10px;
+				font-weight: 700;
+				font-size: 14px;
+			}
+			.small{	
+				background-color: #fff;
+				padding: 4px 6px;
+				border-radius: 20px;
+				color: #d38187
+			}
+			.small-two{
+				color: orange;
+			}
+			.two-gray-portion{
+				width: 1024px;
+				background-color: #fff;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: #000;
+				padding-top: 21px;
+				padding-bottom: 21px;
+				border-radius: 10px;
+			}
+			.gray-one{
+				width: 503px;
+				background-color: #e5e5e5;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.gray-one .gray-section-one{
+				width: 100%;
+			}
+			.gray-one .gray-section-one{
+				padding-top: 15px;
+				font-size: 13px;
+			}
+			.gray-one .gray-section-two{
+				width: 60%;
+				padding-top: 18px;
+				border-radius: 10px;
+			}
+			.gray-one .gray-flex{
+				border: none;
+				padding-bottom: 28px;
+			}
+			.three-gray-portion{
+				width: 1024px;
+				background-color: #fff;
+				display: flex;
+				justify-content: space-between;
+				color: #000;
+				border-radius: 10px;
+			}
+			.three-gray-one{
+				width: 330px;
+				background-color: #e5e5e5;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.three-gray-portion .gray-section-one{
+				order: 1;
+				width: 42%;
+				font-size: 12px;
+				padding-top: 24px;
+			}
+			.three-gray-portion .button-one{
+				font-size: 15px;
+				padding: 12px 8px;
+				width: 140px;
+				margin-top: 8px;
+				margin-right: 5px;
+			}
+			.three-gray-portion .button-two{
+				font-size: 15px;
+				padding: 12px 8px;
+				width: 140px;
+				margin-top: 8px;
+				margin-right: 5px;
+			}
+			.three-gray-portion .button-three{
+				font-size: 14px;
+				padding: 12px 8px;
+				width: 145px;
+				margin-top: 8px;
+				margin-right: 5px;
+			}
+			.three-gray-portion .gray-section-two{
+				order: 3;
+				width: 100%;
+				padding-top: 16px;
+				padding-bottom: 26px;
+				border-radius: 10px;
+			}
+			.three-gray-portion .gray-section-three{
+				order: 2;
+				width: 49%;
+				border-radius: 10px;
+			}
+			.three-gray-portion .gray-flex{
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<div class="blue-portion">
+				<div class="blue-section-one">
+					ACME Salesforce CPQ Implementation
+				</div>
+				<div class="blue-section-two">
+					<div class="blue-flex">
+						<div>
+							<p>Deal Type</p>
+							<h4>Fixed Bid</h4>
+						</div>
+						<div>
+							<p>Deal Duration</p>
+							<h4>18 Months</h4>
+						</div>
+						<div>
+							<p>Location</p>
+							<h4>Multiple</h4>
+						</div>
+					</div>
+				</div>
+				<div class="blue-section-three">
+					<div class="button-one">
+						Deal Index:86 &nbsp;&nbsp;&nbsp;<small>High</small>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="gray-portion">
+				<div class="gray-section-one">
+					ACME Salesforce CPQ Implementation
+				</div>
+				<div class="gray-section-two">
+					<div class="gray-flex">
+						<div>
+							<p>Deal Type</p>
+							<h4>Fixed Bid</h4>
+						</div>
+						<div>
+							<p>Deal Duration</p>
+							<h4>18 Months</h4>
+						</div>
+						<div>
+							<p>Location</p>
+							<h4>Multiple</h4>
+						</div>
+					</div>
+				</div>
+				<div class="gray-section-three">
+					<div class="button-two">
+						Deal Index:86 &nbsp;&nbsp;&nbsp;<small class="small">Low</small>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="two-gray-portion">
+				<div class="gray-one">
+					<div class="gray-section-one">
+						ACME Salesforce CPQ Implementation
+					</div>
+					<div class="gray-section-two">
+						<div class="gray-flex">
+							<div>
+								<p>Deal Type</p>
+								<h4>Fixed Bid</h4>
+							</div>
+							<div>
+								<p>Deal Duration</p>
+								<h4>18 Months</h4>
+							</div>
+							<div>
+								<p>Location</p>
+								<h4>Multiple</h4>
+							</div>
+						</div>
+					</div>
+					<div class="gray-section-three">
+						<div class="button-one">
+							Deal Index:86 &nbsp;&nbsp;&nbsp;<small>High</small>
+						</div>
+					</div>
+				</div>
+				<div class="gray-one">
+					<div class="gray-section-one">
+					ACME Salesforce CPQ Implementation
+				</div>
+				<div class="gray-section-two">
+					<div class="gray-flex">
+						<div>
+							<p>Deal Type</p>
+							<h4>Fixed Bid</h4>
+						</div>
+						<div>
+							<p>Deal Duration</p>
+							<h4>18 Months</h4>
+						</div>
+						<div>
+							<p>Location</p>
+							<h4>Multiple</h4>
+						</div>
+					</div>
+				</div>
+				<div class="gray-section-three">
+					<div class="button-three">
+						Deal Index:86 &nbsp;&nbsp;&nbsp;<small class="small-two">Medium</small>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="three-gray-portion">	
+				<div class="three-gray-one">
+					<div class="gray-section-one">
+						ACME Salesforce CPQ...
+					</div>
+					<div class="gray-section-two">
+						<div class="gray-flex">
+							<div>
+								<p>Deal Type</p>
+								<h4>Fixed Bid</h4>
+							</div>
+							<div>
+								<p>Deal Duration</p>
+								<h4>18 Months</h4>
+							</div>
+							<div>
+								<p>Location</p>
+								<h4>Multiple</h4>
+							</div>
+						</div>
+					</div>
+					<div class="gray-section-three">
+						<div class="blue-section-three">
+							<div class="button-one">
+								Deal Index:86&nbsp;&nbsp;<small>High</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="three-gray-one">
+					<div class="gray-section-one">
+						ACME Salesforce CPQ...
+					</div>
+					<div class="gray-section-two">
+						<div class="gray-flex">
+							<div>
+								<p>Deal Type</p>
+								<h4>Fixed Bid</h4>
+							</div>
+							<div>
+								<p>Deal Duration</p>
+								<h4>18 Months</h4>
+							</div>
+							<div>
+								<p>Location</p>
+								<h4>Multiple</h4>
+							</div>
+						</div>
+					</div>
+					<div class="gray-section-three">
+						<div class="button-three">
+							Deal Index:86&nbsp;&nbsp;<small class="small-two">Medium</small>
+						</div>
+					</div>
+	
+				</div>
+				<div class="three-gray-one">
+					<div class="gray-section-one">
+						ACME Salesforce CPQ...
+					</div>
+					<div class="gray-section-two">
+						<div class="gray-flex">
+							<div>
+								<p>Deal Type</p>
+								<h4>Fixed Bid</h4>
+							</div>
+							<div>
+								<p>Deal Duration</p>
+								<h4>18 Months</h4>
+							</div>
+							<div>
+								<p>Location</p>
+								<h4>Multiple</h4>
+							</div>
+						</div>
+					</div>
+					<div class="gray-section-three">
+						<div class="button-two">
+							Deal Index:86&nbsp;&nbsp;<small class="small">Low</small>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
